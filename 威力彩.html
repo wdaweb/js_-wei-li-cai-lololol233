@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// 作業
+// 用上面練習完成的 function 製作威力彩號碼產生器
+// 將隨機出的數字用 document.write() 顯示在網頁上
+// 威力彩規則
+
+// A 區 1~38 取 6 個數字
+// B 區 1~8 取 1 個數字
+
+
+const willy = (min, max) => {
+      return Math.round(Math.random() * (max - min)) + min
+    }
+
+const group = []
+    for (let i = 0; i < 6; i++) {
+        const num = rand(1, 38)
+        if (group.includes(num)){
+            i-- //重新再跑一次迴圈取值
+        }else{
+            group.push(num)
+        }
+    
+}
+//     請寫一個 function，判斷傳入的數字是不是質數
+// 並使用該 function 列出 1 ~ 100 間的所有質數
+// 質數特性
+
+// 不能被大於 2 且小於自身平方根的數整除
+// 只能被 1 和自身整除，不能被 2 到 (num-1) 整除
+
+    </script>
+</body>
+</html>
